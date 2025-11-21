@@ -4,23 +4,12 @@ Este projeto consiste em uma Web API desenvolvida em **ASP.NET Core 8** para o g
 
 ## 1. Integrantes
 
-*   [Seu Nome Completo] - [Seu RA]
-*   [Nome do Integrante 2] - [RA do Integrante 2] (Opcional)
-*   [Nome do Integrante 3] - [RA do Integrante 3] (Opcional)
+*   Camila do Prado Padalino - RM98316
+*   Gabriel Teixeira Machado - RM551570
+*   Guilherme Brazioli - RM98237
 
-## 2. Documentação e Requisitos Atendidos
 
-| Requisito | Status | Detalhes da Implementação |
-| :--- | :--- | :--- |
-| **Boas Práticas (30 pts)** | ✅ Concluído | Uso de `[ApiController]`, `ControllerBase`, verbos HTTP corretos (GET, POST, PUT, DELETE) e códigos de status HTTP adequados (200 OK, 201 Created, 204 No Content, 400 Bad Request, 404 Not Found). |
-| **Versionamento da API (10 pts)** | ✅ Concluído | A API está versionada com o prefixo `/api/v1/` na rota do Controller (`[Route("api/v1/[controller]")]`). |
-| **Integração e Persistência (30 pts)** | ✅ Concluído | Utilização do **Entity Framework Core** com um `DbContext` e persistência de dados em memória (`InMemoryDatabase`) para facilitar a execução e demonstração. A estrutura está pronta para migração para SQL Server. |
-| **Documentação Swagger (30 pts)** | ✅ Concluído | Implementação completa do **Swagger/OpenAPI** com comentários XML para documentar endpoints, parâmetros e modelos de retorno. |
-| **Documentação no README** | ✅ Concluído | Este documento atende ao requisito de documentação completa. |
-| **Fluxo da Aplicação (Draw.io)** | ✅ Concluído | O diagrama de fluxo de dados está detalhado na seção 5. |
-| **Link do Vídeo** | ⏳ Pendente | [INSERIR LINK DO VÍDEO AQUI] |
-
-## 3. Funcionalidades (CRUD de Habilidades)
+## Funcionalidades (CRUD de Habilidades)
 
 A API oferece um conjunto completo de operações CRUD (Create, Read, Update, Delete) para a entidade `Habilidade`.
 
@@ -49,7 +38,6 @@ A aplicação utiliza o .NET 8 e pode ser executada em qualquer ambiente com o S
     *   .NET SDK 8.0 ou superior.
 2.  **Clonar o Repositório:**
     ```bash
-    git clone [LINK DO SEU REPOSITÓRIO]
     cd FuturoTrabalhoApi
     ```
 3.  **Executar a Aplicação:**
@@ -60,39 +48,3 @@ A aplicação utiliza o .NET 8 e pode ser executada em qualquer ambiente com o S
 4.  **Acessar o Swagger:**
     Abra o navegador e acesse a URL do Swagger para testar os endpoints:
     `https://localhost:7042/swagger/index.html` (A porta pode variar).
-
-## 5. Fluxo de Dados (Diagrama Draw.io)
-
-O diagrama abaixo ilustra o fluxo de uma requisição na API, desde o cliente até a persistência dos dados.
-
-**Instrução:** Você deve desenhar este fluxo no Draw.io e salvar a imagem no repositório.
-
-```mermaid
-graph TD
-    A[Cliente/Postman] --> B(Requisição HTTP: GET/POST/PUT/DELETE);
-    B --> C{API Gateway / Controller};
-    C --> D[Controller: HabilidadesController];
-    D --> E(Serviço/Contexto: AppDbContext);
-    E --> F[Persistência de Dados: EF Core];
-    F --> G[Banco de Dados: In-Memory / SQL Server];
-    G --> F;
-    F --> E;
-    E --> D;
-    D --> H(Resposta HTTP: JSON);
-    H --> A;
-
-    subgraph API Futuro do Trabalho
-        C
-        D
-        E
-        F
-    end
-
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style G fill:#ccf,stroke:#333,stroke-width:2px
-    style H fill:#9f9,stroke:#333,stroke-width:2px
-```
-
-## 6. Link do Vídeo
-
-[INSERIR LINK DO VÍDEO AQUI]
