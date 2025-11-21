@@ -1,0 +1,6 @@
+@FuturoTrabalhoApi_HostAddress = http://localhost:5173
+
+GET {{FuturoTrabalhoApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

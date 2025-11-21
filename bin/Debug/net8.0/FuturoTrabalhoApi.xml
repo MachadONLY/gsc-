@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FuturoTrabalhoApi</name>
+    </assembly>
+    <members>
+        <member name="M:FuturoTrabalhoApi.Controllers.v1.HabilidadesController.GetHabilidades">
+            <summary>
+            Retorna a lista de todas as habilidades cadastradas.
+            </summary>
+        </member>
+        <member name="M:FuturoTrabalhoApi.Controllers.v1.HabilidadesController.GetHabilidade(System.Int32)">
+            <summary>
+            Retorna uma habilidade específica pelo seu ID.
+            </summary>
+            <param name="id">ID da habilidade.</param>
+        </member>
+        <member name="M:FuturoTrabalhoApi.Controllers.v1.HabilidadesController.PostHabilidade(FuturoTrabalhoApi.Models.Habilidade)">
+            <summary>
+            Cria uma nova habilidade.
+            </summary>
+            <param name="habilidade">Dados da nova habilidade.</param>
+        </member>
+        <member name="M:FuturoTrabalhoApi.Controllers.v1.HabilidadesController.PutHabilidade(System.Int32,FuturoTrabalhoApi.Models.Habilidade)">
+            <summary>
+            Atualiza uma habilidade existente.
+            </summary>
+            <param name="id">ID da habilidade a ser atualizada.</param>
+            <param name="habilidade">Novos dados da habilidade.</param>
+        </member>
+        <member name="M:FuturoTrabalhoApi.Controllers.v1.HabilidadesController.DeleteHabilidade(System.Int32)">
+            <summary>
+            Exclui uma habilidade.
+            </summary>
+            <param name="id">ID da habilidade a ser excluída.</param>
+        </member>
+    </members>
+</doc>
