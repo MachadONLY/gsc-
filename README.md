@@ -48,3 +48,9 @@ A aplicação utiliza o .NET 8 e pode ser executada em qualquer ambiente com o S
 4.  **Acessar o Swagger:**
     Abra o navegador e acesse a URL do Swagger para testar os endpoints:
     `https://localhost:7042/swagger/index.html` (A porta pode variar).
+
+
+*   Execução da aplicação
+
+*   https://youtu.be/irp6qTRSGQ8
+
